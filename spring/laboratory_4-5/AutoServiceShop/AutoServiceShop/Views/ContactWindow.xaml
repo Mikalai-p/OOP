@@ -1,0 +1,22 @@
+﻿<Window x:Class="AutoServiceShop.Views.ContactWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Контактная информация"
+        Height="300" Width="400"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Icon="../Resources/app.ico"
+        Cursor="../Resources/custom.cur">
+    <StackPanel Margin="20" VerticalAlignment="Center">
+        <TextBlock Text="ООО Автосервис от Николая" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        <WrapPanel HorizontalAlignment="Center" Margin="0,5">
+            <TextBlock Text="📞 " FontSize="16"/>
+            <TextBlock Text="+375295584578" FontSize="16" Foreground="#333"/>
+        </WrapPanel>
+        <WrapPanel HorizontalAlignment="Center" Margin="0,5">
+            <TextBlock Text="✉️ " FontSize="16"/>
+            <TextBlock Text="nikolajpinchuk091@gmail.com" FontSize="16" Foreground="#333"/>
+        </WrapPanel>
+        <Button Content="Закрыть" Width="100" Height="30" Margin="0,20,0,0" Click="CloseButton_Click"/>
+    </StackPanel>
+</Window>

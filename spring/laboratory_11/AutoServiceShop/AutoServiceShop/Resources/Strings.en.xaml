@@ -1,0 +1,196 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- Window Titles -->
+    <sys:String x:Key="MainWindowTitle">Auto Service - Products and Services</sys:String>
+    <sys:String x:Key="EditWindowTitle">Add/Edit Product</sys:String>
+    <sys:String x:Key="DetailWindowTitle">Product Details</sys:String>
+    <sys:String x:Key="ContactWindowTitle">Contact Information</sys:String>
+    <sys:String x:Key="ProfileWindowTitle">Profile</sys:String>
+    <sys:String x:Key="AdminWindowTitle">Database Administration</sys:String>
+    <sys:String x:Key="OrderWindowTitle">Place Order</sys:String>
+    <sys:String x:Key="AddOrderWindowTitle">Add Order</sys:String>
+    <sys:String x:Key="InputDialogTitle">Input</sys:String>
+
+    <!-- Menus -->
+    <sys:String x:Key="ApplicationMenu">Application</sys:String>
+    <sys:String x:Key="SaveMenuItem">Save</sys:String>
+    <sys:String x:Key="ProfileMenuItem">Profile</sys:String>
+    <sys:String x:Key="ExitMenuItem">Exit</sys:String>
+    <sys:String x:Key="RefreshMenuItem">Refresh</sys:String>
+    <sys:String x:Key="AdminMenuItem">Database Admin</sys:String>
+
+    <sys:String x:Key="AddMenu">Add</sys:String>
+    <sys:String x:Key="EditMenu">Edit</sys:String>
+    <sys:String x:Key="DeleteMenu">Delete</sys:String>
+
+    <sys:String x:Key="RolesMenu">Roles</sys:String>
+    <sys:String x:Key="SortMenu">Sort</sys:String>
+    <sys:String x:Key="FilterMenu">Filter</sys:String>
+    <sys:String x:Key="HelpMenu">Help</sys:String>
+    <sys:String x:Key="LanguageMenu">Language</sys:String>
+    <sys:String x:Key="RussianMenuItem">Russian</sys:String>
+    <sys:String x:Key="EnglishMenuItem">English</sys:String>
+    <sys:String x:Key="EventLogMenu">Event Log</sys:String>
+    <!-- Добавить в раздел меню -->
+    <sys:String x:Key="RoutingDemoMenuItem">Routing Demo</sys:String>
+    <!-- Action Buttons -->
+    <sys:String x:Key="AddButton">Add</sys:String>
+    <sys:String x:Key="EditButton">Edit</sys:String>
+    <sys:String x:Key="DeleteButton">Delete</sys:String>
+    <sys:String x:Key="SortButton">Sort by price</sys:String>
+    <sys:String x:Key="SaveButton">Save</sys:String>
+    <sys:String x:Key="CancelButton">Cancel</sys:String>
+    <sys:String x:Key="CloseButton">Close</sys:String>
+    <sys:String x:Key="AddImageButton">Add image</sys:String>
+    <sys:String x:Key="OrderButton">Order</sys:String>
+    <sys:String x:Key="UndoButton">Undo</sys:String>
+    <sys:String x:Key="RedoButton">Redo</sys:String>
+    <sys:String x:Key="ApplyFilterButton">Apply filter</sys:String>
+    <sys:String x:Key="ConfirmButton">Confirm</sys:String>
+
+    <!-- Roles -->
+    <sys:String x:Key="AdminRole">Administrator</sys:String>
+    <sys:String x:Key="ClientRole">Client</sys:String>
+
+    <!-- Filters -->
+    <sys:String x:Key="SearchPlaceholder">Search</sys:String>
+    <sys:String x:Key="Category">Category</sys:String>
+    <sys:String x:Key="PriceFrom">Price from</sys:String>
+    <sys:String x:Key="PriceTo">to</sys:String>
+    <sys:String x:Key="AllCategories">All categories</sys:String>
+
+    <!-- Sorting -->
+    <sys:String x:Key="NoSort">No sort</sys:String>
+    <sys:String x:Key="PriceAsc">Price ascending</sys:String>
+    <sys:String x:Key="PriceDesc">Price descending</sys:String>
+
+    <!-- Product Fields -->
+    <sys:String x:Key="ShortNameLabel">Short name</sys:String>
+    <sys:String x:Key="FullNameLabel">Full name</sys:String>
+    <sys:String x:Key="DescriptionLabel">Description</sys:String>
+    <sys:String x:Key="CategoryLabel">Category</sys:String>
+    <sys:String x:Key="PriceLabel">Price</sys:String>
+    <sys:String x:Key="QuantityLabel">Quantity</sys:String>
+    <sys:String x:Key="RatingLabel">Rating</sys:String>
+    <sys:String x:Key="CountryLabel">Country of delivery</sys:String>
+    <sys:String x:Key="DiscountLabel">Discount (%)</sys:String>
+    <sys:String x:Key="InStockLabel">In stock</sys:String>
+    <sys:String x:Key="OutOfStockLabel">Out of stock</sys:String>
+    <sys:String x:Key="ManufacturerLabel">Manufacturer</sys:String>
+    <sys:String x:Key="ColorLabel">Color</sys:String>
+    <sys:String x:Key="SizeLabel">Size</sys:String>
+    <sys:String x:Key="ImagesGroupHeader">Images</sys:String>
+
+    <!-- Order Fields -->
+    <sys:String x:Key="ProductLabel">Product</sys:String>
+    <sys:String x:Key="CustomerNameLabel">Customer name</sys:String>
+    <sys:String x:Key="OrderDateLabel">Order date</sys:String>
+    <sys:String x:Key="OrderIdLabel">Order ID</sys:String>
+
+    <!-- Admin Tables -->
+    <sys:String x:Key="ProductsTable">Products</sys:String>
+    <sys:String x:Key="CategoriesTable">Categories</sys:String>
+    <sys:String x:Key="OrdersTable">Orders</sys:String>
+
+    <!-- Confirmations and Messages -->
+    <sys:String x:Key="ConfirmDelete">Delete record</sys:String>
+    <sys:String x:Key="ConfirmDeleteMessage">Delete selected record?</sys:String>
+    <sys:String x:Key="ConfirmDeleteProduct">Delete product '{0}'?</sys:String>
+    <sys:String x:Key="DataSaved">Data saved successfully</sys:String>
+    <sys:String x:Key="ChangesSaved">Changes saved</sys:String>
+    <sys:String x:Key="SelectRecord">Select a record to edit</sys:String>
+    <sys:String x:Key="EnterCustomerName">Enter your name</sys:String>
+    <sys:String x:Key="EnterCategoryName">Enter category name</sys:String>
+    <sys:String x:Key="NewCategory">New category</sys:String>
+    <sys:String x:Key="EditCategory">Edit category</sys:String>
+    <sys:String x:Key="InsufficientStock">Insufficient stock. Available: {0}</sys:String>
+    <sys:String x:Key="OrderSuccess">Order placed successfully!</sys:String>
+    <sys:String x:Key="DatabaseError">Database error</sys:String>
+    <sys:String x:Key="ConnectionStringNotFound">Connection string not found in App.config.</sys:String>
+    <sys:String x:Key="ProductNotFound">Product not found.</sys:String>
+    <sys:String x:Key="OrderNotFound">Order not found.</sys:String>
+    <sys:String x:Key="SaveSettingsError">Failed to save settings. Settings file may be corrupted.</sys:String>
+
+    <!-- Contact Information -->
+    <sys:String x:Key="ContactCompanyName">LLC Auto Service from Nikolay</sys:String>
+    <sys:String x:Key="ContactPhone">📞 +375295584578</sys:String>
+    <sys:String x:Key="ContactEmail">✉️ nikolajpinchuk091@gmail.com</sys:String>
+    <sys:String x:Key="ContactInfoMenuItem">Contact information</sys:String>
+
+    <!-- User Profile -->
+    <sys:String x:Key="NameLabel">Name</sys:String>
+    <sys:String x:Key="EmailLabel">Email</sys:String>
+    <sys:String x:Key="LanguageLabel">Language</sys:String>
+    <sys:String x:Key="ThemeLabel">Theme</sys:String>
+    <sys:String x:Key="LightTheme">Light</sys:String>
+    <sys:String x:Key="DarkTheme">Dark</sys:String>
+    <sys:String x:Key="PinkTheme">Pink</sys:String>
+    <sys:String x:Key="ReceiveNotifications">Receive notifications</sys:String>
+    <!-- Demo Window Titles -->
+    <sys:String x:Key="RoutingDemoWindowTitle">Routing Events Demonstration</sys:String>
+
+    <!-- Headers and Descriptions -->
+    <sys:String x:Key="RoutingDemoHeader">Demonstration of Bubbling, Tunneling and Direct events</sys:String>
+    <sys:String x:Key="OuterBorderText">Outer Border (Red)</sys:String>
+    <sys:String x:Key="MiddleBorderText">Middle Border (Blue)</sys:String>
+    <sys:String x:Key="InnerBorderText">Inner Border (Green) - contains controls</sys:String>
+    <sys:String x:Key="RatingControlGroup">RatingControl</sys:String>
+    <sys:String x:Key="ClickStarsText">Click on stars:</sys:String>
+    <sys:String x:Key="QuantityControlGroup">QuantitySelectorControl</sys:String>
+    <sys:String x:Key="UseButtonsText">Use + and - buttons:</sys:String>
+    <sys:String x:Key="ControlsInsideText">⬆️ Controls inside green Border</sys:String>
+
+    <!-- Event Log -->
+    <sys:String x:Key="EventLogGroup">Event Log (shows processing order)</sys:String>
+    <sys:String x:Key="ClearLogButton">Clear log</sys:String>
+    <sys:String x:Key="ExplainButton">Explain</sys:String>
+
+    <!-- Log messages (color markers) -->
+    <sys:String x:Key="LogOuterBorderTunnel">🔴 OUTER Border (Red): PreviewRatingChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogMiddleBorderTunnel">🔵 MIDDLE Border (Blue): PreviewRatingChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogInnerBorderTunnel">🟢 INNER Border (Green): PreviewRatingChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogRatingControlTunnel">⭐ RatingControl: PreviewRatingChanged (TUNNEL - on control)</sys:String>
+    <sys:String x:Key="LogRatingControlBubble">⭐ RatingControl: RatingChanged (BUBBLE - on control)</sys:String>
+    <sys:String x:Key="LogInnerBorderBubble">🟢 INNER Border (Green): RatingChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogMiddleBorderBubble">🔵 MIDDLE Border (Blue): RatingChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogOuterBorderBubble">🔴 OUTER Border (Red): RatingChanged (BUBBLE)</sys:String>
+
+    <sys:String x:Key="LogOuterBorderQuantityTunnel">🔴 OUTER Border (Red): PreviewQuantityChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogMiddleBorderQuantityTunnel">🔵 MIDDLE Border (Blue): PreviewQuantityChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogInnerBorderQuantityTunnel">🟢 INNER Border (Green): PreviewQuantityChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogQuantityControlTunnel">🔢 QuantitySelectorControl: PreviewQuantityChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogQuantityControlBubble">🔢 QuantitySelectorControl: QuantityChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogInnerBorderQuantityBubble">🟢 INNER Border (Green): QuantityChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogMiddleBorderQuantityBubble">🔵 MIDDLE Border (Blue): QuantityChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogOuterBorderQuantityBubble">🔴 OUTER Border (Red): QuantityChanged (BUBBLE)</sys:String>
+
+    <sys:String x:Key="LogRatingConfirmed">⭐ RatingControl: RatingConfirmed (DIRECT - only on control)</sys:String>
+    <sys:String x:Key="LogQuantityConfirmed">🔢 QuantitySelectorControl: QuantityConfirmed (DIRECT - only on control)</sys:String>
+
+    <sys:String x:Key="LogDemoStarted">=== DEMONSTRATION STARTED ===</sys:String>
+    <sys:String x:Key="LogEventOrder">Event order:</sys:String>
+    <sys:String x:Key="LogTunnelDesc">1. TUNNEL (Preview*) - go from root to source</sys:String>
+    <sys:String x:Key="LogBubbleDesc">2. BUBBLE (without Preview) - go from source to root</sys:String>
+    <sys:String x:Key="LogDirectDesc">3. DIRECT - only on element, do not route</sys:String>
+
+    <!-- Explanation text -->
+    <sys:String x:Key="ExplanationTitle">=== ROUTING TYPES EXPLANATION ===</sys:String>
+    <sys:String x:Key="TunnelingExplanation">1️⃣ TUNNELING (Preview* events):
+   • Move TOP-DOWN (from root to source)
+   • Example: Outer Border → Middle Border → Inner Border → Control
+   • Used for preprocessing/interception</sys:String>
+    <sys:String x:Key="BubblingExplanation">2️⃣ BUBBLING (regular events):
+   • Move BOTTOM-UP (from source to root)
+   • Example: Control → Inner Border → Middle Border → Outer Border
+   • Used for notifying parent elements</sys:String>
+    <sys:String x:Key="DirectExplanation">3️⃣ DIRECT events:
+   • Processed ONLY on the source element
+   • Do not go up or down the tree
+   • Example: RatingConfirmed, QuantityConfirmed</sys:String>
+    <sys:String x:Key="SequenceExplanation">🔄 SEQUENCE when clicking on RatingControl:
+1. TUNNEL: Outer Border (Preview) → Middle Border (Preview) → Control (Preview)
+2. BUBBLE: Control (Changed) → Inner Border (Changed) → Middle Border (Changed) → Outer Border (Changed)
+3. DIRECT (double-click): Only on control (Confirmed)</sys:String>
+</ResourceDictionary>

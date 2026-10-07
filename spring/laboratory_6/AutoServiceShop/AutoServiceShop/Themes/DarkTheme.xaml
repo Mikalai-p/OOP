@@ -1,0 +1,54 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <SolidColorBrush x:Key="PrimaryBrush" Color="#000000"/>
+    
+    <SolidColorBrush x:Key="SecondaryBrush" Color="White"/>
+    
+    <SolidColorBrush x:Key="SuccessBrush" Color="#1DB954"/>
+    
+    <SolidColorBrush x:Key="ErrorBrush" Color="#E91429"/>
+    
+    <SolidColorBrush x:Key="BackgroundBrush" Color="#000000"/>
+    
+    <SolidColorBrush x:Key="SurfaceBrush" Color="#1E1E1E"/>
+    
+    <SolidColorBrush x:Key="ForegroundBrush" Color="Orange"/>
+    
+    <SolidColorBrush x:Key="SecondaryForegroundBrush" Color="#FFFFFF"/>
+    
+    <SolidColorBrush x:Key="BorderBrush" Color="#333333"/>
+    
+    <SolidColorBrush x:Key="CardBorderBrush" Color="#1DB954"/>
+    
+    <SolidColorBrush x:Key="ButtonForeground" Color="#FF8C00"/>
+    
+    <SolidColorBrush x:Key="TextBoxBackgroundBrush" Color="Black"/>
+    
+    <SolidColorBrush x:Key="TextBoxForegroundBrush" Color="#FF8C00"/>
+    
+    <SolidColorBrush x:Key="SearchTextBoxBackgroundBrush" Color="Black"/>
+    <SolidColorBrush x:Key="SearchTextBoxForegroundBrush" Color="White"/>
+    <SolidColorBrush x:Key="ComboBoxBackgroundBrush" Color="Black"/>
+    <SolidColorBrush x:Key="ComboBoxForegroundBrush" Color="Orange"/>
+    <SolidColorBrush x:Key="FilterButtonBackgroundBrush" Color="#000000"/>
+    <SolidColorBrush x:Key="FilterButtonForegroundBrush" Color="Orange"/>
+    <SolidColorBrush x:Key="FilterButtonBorderBrush" Color="#000000"/>
+    <SolidColorBrush x:Key="RadioButtonForeground" Color="#FF8C00"/>
+    <SolidColorBrush x:Key="CheckBoxForeground" Color="#FF8C00"/>
+    <SolidColorBrush x:Key="PriceForegroundBrush" Color="White"/>
+    
+
+    <!-- Кисти для дочерних окон (светлое оформление внутри тёмной темы) -->
+    <SolidColorBrush x:Key="ChildWindowBackground" Color="Black"/>
+    <SolidColorBrush x:Key="ChildLabelForeground" Color="Orange"/>
+    <SolidColorBrush x:Key="ChildTextBoxBackground" Color="Black"/>
+    <SolidColorBrush x:Key="ChildTextBoxForeground" Color="White"/>
+    <SolidColorBrush x:Key="ChildButtonBackground" Color="Black"/>
+    <SolidColorBrush x:Key="ChildButtonForeground" Color="#FF8C00"/>
+    <SolidColorBrush x:Key="ChildBorderBrush" Color="#DDDDDD"/>
+    <SolidColorBrush x:Key="ChildForeground" Color="White"/>
+    <SolidColorBrush x:Key="ChildCheckBoxForeground" Color="Black"/>
+    <SolidColorBrush x:Key="ChildComboBoxBackground" Color="Black"/>
+    <SolidColorBrush x:Key="ChildComboBoxForeground" Color="White"/>
+</ResourceDictionary>

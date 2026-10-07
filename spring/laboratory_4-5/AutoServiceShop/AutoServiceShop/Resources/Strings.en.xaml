@@ -1,0 +1,72 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="MainWindowTitle">Auto Service - Products and Services</sys:String>
+    <sys:String x:Key="EditWindowTitle">Add/Edit Product</sys:String>
+    <sys:String x:Key="DetailWindowTitle">Product Details</sys:String>
+    <sys:String x:Key="ContactWindowTitle">Contact Information</sys:String>
+
+    <sys:String x:Key="ApplicationMenu">Application</sys:String>
+    <sys:String x:Key="SaveMenuItem">Save</sys:String>
+    <sys:String x:Key="ExitMenuItem">Exit</sys:String>
+
+    <sys:String x:Key="AddMenu">Add</sys:String>
+    <sys:String x:Key="EditMenu">Edit</sys:String>
+    <sys:String x:Key="DeleteMenu">Delete</sys:String>
+
+    <sys:String x:Key="RolesMenu">Roles</sys:String>
+    <sys:String x:Key="SortMenu">Sort</sys:String>
+    <sys:String x:Key="FilterMenu">Filter</sys:String>
+    <sys:String x:Key="HelpMenu">Help</sys:String>
+    <sys:String x:Key="LanguageMenu">Language</sys:String>
+    <sys:String x:Key="RussianMenuItem">Russian</sys:String>
+    <sys:String x:Key="EnglishMenuItem">English</sys:String>
+
+    <sys:String x:Key="AddButton">Add</sys:String>
+    <sys:String x:Key="EditButton">Edit</sys:String>
+    <sys:String x:Key="DeleteButton">Delete</sys:String>
+    <sys:String x:Key="SortButton">Sort by price</sys:String>
+    <sys:String x:Key="SaveButton">Save</sys:String>
+    <sys:String x:Key="CancelButton">Cancel</sys:String>
+    <sys:String x:Key="CloseButton">Close</sys:String>
+    <sys:String x:Key="AddImageButton">Add image</sys:String>
+
+    <sys:String x:Key="AdminRole">Administrator</sys:String>
+    <sys:String x:Key="ClientRole">Client</sys:String>
+
+    <sys:String x:Key="SearchPlaceholder">Search</sys:String>
+    <sys:String x:Key="Category">Category</sys:String>
+    <sys:String x:Key="PriceFrom">Price from</sys:String>
+    <sys:String x:Key="PriceTo">to</sys:String>
+
+    <sys:String x:Key="NoSort">No sort</sys:String>
+    <sys:String x:Key="PriceAsc">Price ascending</sys:String>
+    <sys:String x:Key="PriceDesc">Price descending</sys:String>
+
+    <sys:String x:Key="ShortNameLabel">Short name</sys:String>
+    <sys:String x:Key="FullNameLabel">Full name</sys:String>
+    <sys:String x:Key="DescriptionLabel">Description</sys:String>
+    <sys:String x:Key="CategoryLabel">Category</sys:String>
+    <sys:String x:Key="PriceLabel">Price</sys:String>
+    <sys:String x:Key="QuantityLabel">Quantity</sys:String>
+    <sys:String x:Key="RatingLabel">Rating</sys:String>
+    <sys:String x:Key="CountryLabel">Country of delivery</sys:String>
+    <sys:String x:Key="DiscountLabel">Discount (%)</sys:String>
+    <sys:String x:Key="InStockLabel">In stock</sys:String>
+    <sys:String x:Key="OutOfStockLabel">Out of stock</sys:String>
+    <sys:String x:Key="ManufacturerLabel">Manufacturer</sys:String>
+    <sys:String x:Key="ColorLabel">Color</sys:String>
+    <sys:String x:Key="SizeLabel">Size</sys:String>
+    <sys:String x:Key="ImagesGroupHeader">Images</sys:String>
+
+    <sys:String x:Key="ConfirmDelete">Delete product</sys:String>
+    <sys:String x:Key="ConfirmDeleteMessage">Delete product '{0}'?</sys:String>
+    <sys:String x:Key="DataSaved">Data saved successfully</sys:String>
+
+    <sys:String x:Key="AllCategories">All categories</sys:String>
+    <sys:String x:Key="ContactInfoMenuItem">Contact Information</sys:String>
+    <sys:String x:Key="ContactCompanyName">LLC Auto Service from Nikolay</sys:String>
+    <sys:String x:Key="ContactPhone">📞 +375295584578</sys:String>
+    <sys:String x:Key="ContactEmail">✉️ nikolajpinchuk091@gmail.com</sys:String>
+</ResourceDictionary>

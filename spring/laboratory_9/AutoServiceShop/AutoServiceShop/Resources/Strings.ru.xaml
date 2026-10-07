@@ -1,0 +1,196 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!-- Заголовки окон -->
+    <sys:String x:Key="MainWindowTitle">Автосервис - товары и услуги</sys:String>
+    <sys:String x:Key="EditWindowTitle">Добавление/Редактирование товара</sys:String>
+    <sys:String x:Key="DetailWindowTitle">Детали товара</sys:String>
+    <sys:String x:Key="ContactWindowTitle">Контактная информация</sys:String>
+    <sys:String x:Key="ProfileWindowTitle">Личный кабинет</sys:String>
+    <sys:String x:Key="AdminWindowTitle">Администрирование базы данных</sys:String>
+    <sys:String x:Key="OrderWindowTitle">Оформление заказа</sys:String>
+    <sys:String x:Key="AddOrderWindowTitle">Добавление заказа</sys:String>
+    <sys:String x:Key="InputDialogTitle">Ввод</sys:String>
+
+    <!-- Меню -->
+    <sys:String x:Key="ApplicationMenu">Приложение</sys:String>
+    <sys:String x:Key="SaveMenuItem">Сохранить</sys:String>
+    <sys:String x:Key="ProfileMenuItem">Личный кабинет</sys:String>
+    <sys:String x:Key="ExitMenuItem">Выход</sys:String>
+    <sys:String x:Key="RefreshMenuItem">Обновить</sys:String>
+    <sys:String x:Key="AdminMenuItem">Администрирование БД</sys:String>
+
+    <sys:String x:Key="AddMenu">Добавить</sys:String>
+    <sys:String x:Key="EditMenu">Редактировать</sys:String>
+    <sys:String x:Key="DeleteMenu">Удалить</sys:String>
+
+    <sys:String x:Key="RolesMenu">Роли</sys:String>
+    <sys:String x:Key="SortMenu">Сортировка</sys:String>
+    <sys:String x:Key="FilterMenu">Фильтр</sys:String>
+    <sys:String x:Key="HelpMenu">Справка</sys:String>
+    <sys:String x:Key="LanguageMenu">Язык</sys:String>
+    <sys:String x:Key="RussianMenuItem">Русский</sys:String>
+    <sys:String x:Key="EnglishMenuItem">English</sys:String>
+    <sys:String x:Key="EventLogMenu">Лог событий</sys:String>
+    <!-- Добавить в раздел меню -->
+    <sys:String x:Key="RoutingDemoMenuItem">Демо маршрутизации</sys:String>
+    <!-- Кнопки действий -->
+    <sys:String x:Key="AddButton">Добавить</sys:String>
+    <sys:String x:Key="EditButton">Редактировать</sys:String>
+    <sys:String x:Key="DeleteButton">Удалить</sys:String>
+    <sys:String x:Key="SortButton">Сортировать по цене</sys:String>
+    <sys:String x:Key="SaveButton">Сохранить</sys:String>
+    <sys:String x:Key="CancelButton">Отмена</sys:String>
+    <sys:String x:Key="CloseButton">Закрыть</sys:String>
+    <sys:String x:Key="AddImageButton">Добавить изображение</sys:String>
+    <sys:String x:Key="OrderButton">Заказать</sys:String>
+    <sys:String x:Key="UndoButton">Отменить</sys:String>
+    <sys:String x:Key="RedoButton">Повторить</sys:String>
+    <sys:String x:Key="ApplyFilterButton">Применить фильтр</sys:String>
+    <sys:String x:Key="ConfirmButton">Подтвердить</sys:String>
+
+    <!-- Роли -->
+    <sys:String x:Key="AdminRole">Администратор</sys:String>
+    <sys:String x:Key="ClientRole">Клиент</sys:String>
+
+    <!-- Фильтры -->
+    <sys:String x:Key="SearchPlaceholder">Поиск</sys:String>
+    <sys:String x:Key="Category">Категория</sys:String>
+    <sys:String x:Key="PriceFrom">Цена от</sys:String>
+    <sys:String x:Key="PriceTo">до</sys:String>
+    <sys:String x:Key="AllCategories">Все категории</sys:String>
+
+    <!-- Сортировка -->
+    <sys:String x:Key="NoSort">Без сортировки</sys:String>
+    <sys:String x:Key="PriceAsc">По возрастанию цены</sys:String>
+    <sys:String x:Key="PriceDesc">По убыванию цены</sys:String>
+
+    <!-- Поля товара -->
+    <sys:String x:Key="ShortNameLabel">Краткое название</sys:String>
+    <sys:String x:Key="FullNameLabel">Полное название</sys:String>
+    <sys:String x:Key="DescriptionLabel">Описание</sys:String>
+    <sys:String x:Key="CategoryLabel">Категория</sys:String>
+    <sys:String x:Key="PriceLabel">Цена</sys:String>
+    <sys:String x:Key="QuantityLabel">Количество</sys:String>
+    <sys:String x:Key="RatingLabel">Рейтинг</sys:String>
+    <sys:String x:Key="CountryLabel">Страна доставки</sys:String>
+    <sys:String x:Key="DiscountLabel">Скидка (%)</sys:String>
+    <sys:String x:Key="InStockLabel">В наличии</sys:String>
+    <sys:String x:Key="OutOfStockLabel">Нет в наличии</sys:String>
+    <sys:String x:Key="ManufacturerLabel">Производитель</sys:String>
+    <sys:String x:Key="ColorLabel">Цвет</sys:String>
+    <sys:String x:Key="SizeLabel">Размер</sys:String>
+    <sys:String x:Key="ImagesGroupHeader">Изображения</sys:String>
+
+    <!-- Поля заказа -->
+    <sys:String x:Key="ProductLabel">Товар</sys:String>
+    <sys:String x:Key="CustomerNameLabel">Имя клиента</sys:String>
+    <sys:String x:Key="OrderDateLabel">Дата заказа</sys:String>
+    <sys:String x:Key="OrderIdLabel">Номер заказа</sys:String>
+
+    <!-- Таблицы администрирования -->
+    <sys:String x:Key="ProductsTable">Товары</sys:String>
+    <sys:String x:Key="CategoriesTable">Категории</sys:String>
+    <sys:String x:Key="OrdersTable">Заказы</sys:String>
+
+    <!-- Подтверждения и сообщения -->
+    <sys:String x:Key="ConfirmDelete">Удалить запись</sys:String>
+    <sys:String x:Key="ConfirmDeleteMessage">Удалить выбранную запись?</sys:String>
+    <sys:String x:Key="ConfirmDeleteProduct">Удалить товар '{0}'?</sys:String>
+    <sys:String x:Key="DataSaved">Данные успешно сохранены</sys:String>
+    <sys:String x:Key="ChangesSaved">Изменения сохранены</sys:String>
+    <sys:String x:Key="SelectRecord">Выберите запись для редактирования</sys:String>
+    <sys:String x:Key="EnterCustomerName">Введите ваше имя</sys:String>
+    <sys:String x:Key="EnterCategoryName">Введите название категории</sys:String>
+    <sys:String x:Key="NewCategory">Новая категория</sys:String>
+    <sys:String x:Key="EditCategory">Редактирование категории</sys:String>
+    <sys:String x:Key="InsufficientStock">Недостаточно товара на складе. Доступно: {0}</sys:String>
+    <sys:String x:Key="OrderSuccess">Заказ успешно оформлен!</sys:String>
+    <sys:String x:Key="DatabaseError">Ошибка базы данных</sys:String>
+    <sys:String x:Key="ConnectionStringNotFound">Строка подключения не найдена в App.config.</sys:String>
+    <sys:String x:Key="ProductNotFound">Товар не найден.</sys:String>
+    <sys:String x:Key="OrderNotFound">Заказ не найден.</sys:String>
+    <sys:String x:Key="SaveSettingsError">Не удалось сохранить настройки. Возможно, файл настроек повреждён.</sys:String>
+
+    <!-- Контактная информация -->
+    <sys:String x:Key="ContactCompanyName">ООО Автосервис от Николая</sys:String>
+    <sys:String x:Key="ContactPhone">📞 +375295584578</sys:String>
+    <sys:String x:Key="ContactEmail">✉️ nikolajpinchuk091@gmail.com</sys:String>
+    <sys:String x:Key="ContactInfoMenuItem">Контактная информация</sys:String>
+
+    <!-- Профиль пользователя -->
+    <sys:String x:Key="NameLabel">Имя</sys:String>
+    <sys:String x:Key="EmailLabel">Email</sys:String>
+    <sys:String x:Key="LanguageLabel">Язык</sys:String>
+    <sys:String x:Key="ThemeLabel">Тема</sys:String>
+    <sys:String x:Key="LightTheme">Светлая</sys:String>
+    <sys:String x:Key="DarkTheme">Тёмная</sys:String>
+    <sys:String x:Key="PinkTheme">Розовая</sys:String>
+    <sys:String x:Key="ReceiveNotifications">Получать уведомления</sys:String>
+    <!-- Заголовки окон демо -->
+    <sys:String x:Key="RoutingDemoWindowTitle">Демонстрация маршрутизации событий</sys:String>
+
+    <!-- Заголовки и пояснения -->
+    <sys:String x:Key="RoutingDemoHeader">Демонстрация различий между Bubbling, Tunneling и Direct событиями</sys:String>
+    <sys:String x:Key="OuterBorderText">Внешний Border (Красный)</sys:String>
+    <sys:String x:Key="MiddleBorderText">Средний Border (Синий)</sys:String>
+    <sys:String x:Key="InnerBorderText">Внутренний Border (Зеленый) - содержит элементы управления</sys:String>
+    <sys:String x:Key="RatingControlGroup">RatingControl</sys:String>
+    <sys:String x:Key="ClickStarsText">Кликните на звезды:</sys:String>
+    <sys:String x:Key="QuantityControlGroup">QuantitySelectorControl</sys:String>
+    <sys:String x:Key="UseButtonsText">Используйте кнопки + и - :</sys:String>
+    <sys:String x:Key="ControlsInsideText">⬆️ Элементы управления внутри зеленого Border</sys:String>
+
+    <!-- Лог событий -->
+    <sys:String x:Key="EventLogGroup">Лог событий (показывает порядок обработки)</sys:String>
+    <sys:String x:Key="ClearLogButton">Очистить лог</sys:String>
+    <sys:String x:Key="ExplainButton">Объяснить</sys:String>
+
+    <!-- Сообщения в логе (цветовые маркеры) -->
+    <sys:String x:Key="LogOuterBorderTunnel">🔴 ВНЕШНИЙ Border (Красный): PreviewRatingChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogMiddleBorderTunnel">🔵 СРЕДНИЙ Border (Синий): PreviewRatingChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogInnerBorderTunnel">🟢 ВНУТРЕННИЙ Border (Зеленый): PreviewRatingChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogRatingControlTunnel">⭐ RatingControl: PreviewRatingChanged (TUNNEL - на самом контроле)</sys:String>
+    <sys:String x:Key="LogRatingControlBubble">⭐ RatingControl: RatingChanged (BUBBLE - на самом контроле)</sys:String>
+    <sys:String x:Key="LogInnerBorderBubble">🟢 ВНУТРЕННИЙ Border (Зеленый): RatingChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogMiddleBorderBubble">🔵 СРЕДНИЙ Border (Синий): RatingChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogOuterBorderBubble">🔴 ВНЕШНИЙ Border (Красный): RatingChanged (BUBBLE)</sys:String>
+
+    <sys:String x:Key="LogOuterBorderQuantityTunnel">🔴 ВНЕШНИЙ Border (Красный): PreviewQuantityChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogMiddleBorderQuantityTunnel">🔵 СРЕДНИЙ Border (Синий): PreviewQuantityChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogInnerBorderQuantityTunnel">🟢 ВНУТРЕННИЙ Border (Зеленый): PreviewQuantityChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogQuantityControlTunnel">🔢 QuantitySelectorControl: PreviewQuantityChanged (TUNNEL)</sys:String>
+    <sys:String x:Key="LogQuantityControlBubble">🔢 QuantitySelectorControl: QuantityChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogInnerBorderQuantityBubble">🟢 ВНУТРЕННИЙ Border (Зеленый): QuantityChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogMiddleBorderQuantityBubble">🔵 СРЕДНИЙ Border (Синий): QuantityChanged (BUBBLE)</sys:String>
+    <sys:String x:Key="LogOuterBorderQuantityBubble">🔴 ВНЕШНИЙ Border (Красный): QuantityChanged (BUBBLE)</sys:String>
+
+    <sys:String x:Key="LogRatingConfirmed">⭐ RatingControl: RatingConfirmed (DIRECT - только на контроле)</sys:String>
+    <sys:String x:Key="LogQuantityConfirmed">🔢 QuantitySelectorControl: QuantityConfirmed (DIRECT - только на контроле)</sys:String>
+
+    <sys:String x:Key="LogDemoStarted">=== ДЕМОНСТРАЦИЯ ЗАПУЩЕНА ===</sys:String>
+    <sys:String x:Key="LogEventOrder">Порядок событий:</sys:String>
+    <sys:String x:Key="LogTunnelDesc">1. TUNNEL (Preview*) - идут от корня к источнику</sys:String>
+    <sys:String x:Key="LogBubbleDesc">2. BUBBLE (без Preview) - идут от источника к корню</sys:String>
+    <sys:String x:Key="LogDirectDesc">3. DIRECT - только на элементе, не маршрутизируются</sys:String>
+
+    <!-- Текст объяснения -->
+    <sys:String x:Key="ExplanationTitle">=== ОБЪЯСНЕНИЕ ТИПОВ МАРШРУТИЗАЦИИ ===</sys:String>
+    <sys:String x:Key="TunnelingExplanation">1️⃣ TUNNELING (Preview* события):
+   • Движутся СВЕРХУ ВНИЗ (от корня к источнику)
+   • Пример: Внешний Border → Средний Border → Внутренний Border → Контрол
+   • Используются для предварительной обработки/перехвата</sys:String>
+    <sys:String x:Key="BubblingExplanation">2️⃣ BUBBLING (обычные события):
+   • Движутся СНИЗУ ВВЕРХ (от источника к корню)
+   • Пример: Контрол → Внутренний Border → Средний Border → Внешний Border
+   • Используются для уведомления родительских элементов</sys:String>
+    <sys:String x:Key="DirectExplanation">3️⃣ DIRECT события:
+   • Обрабатываются ТОЛЬКО на элементе-источнике
+   • Не поднимаются и не опускаются по дереву
+   • Пример: RatingConfirmed, QuantityConfirmed</sys:String>
+    <sys:String x:Key="SequenceExplanation">🔄 ПОСЛЕДОВАТЕЛЬНОСТЬ при клике на RatingControl:
+1. TUNNEL: Внешний Border (Preview) → Средний Border (Preview) → Контрол (Preview)
+2. BUBBLE: Контрол (Changed) → Внутренний Border (Changed) → Средний Border (Changed) → Внешний Border (Changed)
+3. DIRECT (при двойном клике): Только на контроле (Confirmed)</sys:String>
+</ResourceDictionary>

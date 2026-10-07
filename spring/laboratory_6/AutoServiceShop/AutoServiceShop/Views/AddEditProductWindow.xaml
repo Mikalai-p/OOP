@@ -1,0 +1,169 @@
+﻿<Window x:Class="AutoServiceShop.Views.AddEditProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:converters="clr-namespace:AutoServiceShop.Converters"
+        Title="{DynamicResource EditWindowTitle}"
+        Height="650" Width="850"
+        WindowStartupLocation="CenterOwner"
+        Icon="../Resources/app.ico"
+        Cursor="../Resources/custom.cur"
+        Background="{DynamicResource ChildWindowBackground}">
+    <Window.Resources>
+        <converters:ImagePathConverter x:Key="ImagePathConverter"/>
+        <converters:IntToStringConverter x:Key="IntToStringConverter"/>
+    </Window.Resources>
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel Margin="0,0,10,0">
+                <Label Content="{DynamicResource ShortNameLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.ShortName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" 
+                         Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}">
+                    <Validation.ErrorTemplate>
+                        <ControlTemplate>
+                            <DockPanel LastChildFill="True">
+                                <Border Background="Red" Width="20" Height="20" DockPanel.Dock="Right" Margin="2,0" CornerRadius="3"
+                                        ToolTip="{Binding ElementName=adorned, Path=AdornedElement.(Validation.Errors)[0].ErrorContent}">
+                                    <TextBlock Text="!" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White"/>
+                                </Border>
+                                <AdornedElementPlaceholder x:Name="adorned"/>
+                            </DockPanel>
+                        </ControlTemplate>
+                    </Validation.ErrorTemplate>
+                </TextBox>
+
+                <Label Content="{DynamicResource FullNameLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.FullName, UpdateSourceTrigger=PropertyChanged}" Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <Label Content="{DynamicResource DescriptionLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Description}" TextWrapping="Wrap" AcceptsReturn="True" Height="80" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <Label Content="{DynamicResource CategoryLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Category}" Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <Label Content="{DynamicResource PriceLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Price, UpdateSourceTrigger=LostFocus, TargetNullValue=0, FallbackValue=0}" 
+                         Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <Label Content="{DynamicResource QuantityLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Quantity, Converter={StaticResource IntToStringConverter}, UpdateSourceTrigger=LostFocus}" 
+                         Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <Label Content="{DynamicResource RatingLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Rating, UpdateSourceTrigger=LostFocus, TargetNullValue=0, FallbackValue=0}" 
+                         Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <Label Content="{DynamicResource CountryLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Country}" Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <Label Content="{DynamicResource DiscountLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Discount, UpdateSourceTrigger=LostFocus, TargetNullValue=0, FallbackValue=0}" 
+                         Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <CheckBox IsChecked="{Binding Product.InStock}" Content="{DynamicResource InStockLabel}" Margin="0,5,0,10"
+                          Foreground="{DynamicResource ChildCheckBoxForeground}"/>
+
+                <Label Content="{DynamicResource ManufacturerLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Manufacturer}" Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <Label Content="{DynamicResource ColorLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Color}" Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+
+                <Label Content="{DynamicResource SizeLabel}" Foreground="{DynamicResource ChildLabelForeground}"/>
+                <TextBox Text="{Binding Product.Size}" Height="30" Margin="0,0,0,10"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         Foreground="{DynamicResource ChildTextBoxForeground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <GroupBox Header="{DynamicResource ImagesGroupHeader}" Grid.Row="1" Margin="0,10,0,10"
+                  BorderBrush="{DynamicResource ChildBorderBrush}"
+                  Foreground="{DynamicResource ChildLabelForeground}">
+            <DockPanel>
+                <Button Content="{DynamicResource AddImageButton}" Command="{Binding AddImageCommand}" 
+                        DockPanel.Dock="Top" Margin="5" Height="35"
+                        Background="{DynamicResource ChildButtonBackground}"
+                        Foreground="{DynamicResource ChildButtonForeground}"/>
+                <ListBox ItemsSource="{Binding EditableImagePaths}"
+                         AllowDrop="True"
+                         Drop="ListBox_Drop"
+                         DragEnter="ListBox_DragEnter"
+                         Height="150"
+                         Background="{DynamicResource ChildTextBoxBackground}"
+                         BorderBrush="{DynamicResource ChildBorderBrush}"
+                         Foreground="{DynamicResource ChildForeground}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <Image Source="{Binding ., Converter={StaticResource ImagePathConverter}}" 
+                                       Width="50" Height="50" Margin="5"/>
+                                <TextBlock Text="{Binding}" VerticalAlignment="Center" Width="300" 
+                                           TextWrapping="Wrap" Margin="5,0"
+                                           Foreground="{DynamicResource ChildForeground}"/>
+                                <Button Content="X" 
+                                        Command="{Binding DataContext.RemoveImageCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                        CommandParameter="{Binding}"
+                                        Margin="5"
+                                        Width="40"
+                                        Height="30"
+                                        Background="Red"
+                                        Foreground="White"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </DockPanel>
+        </GroupBox>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="{DynamicResource SaveButton}" Command="{Binding SaveCommand}" 
+                    Width="100" Height="35" Margin="5" FontSize="14"
+                    Background="{DynamicResource ChildButtonBackground}"
+                    Foreground="{DynamicResource ChildButtonForeground}"/>
+            <Button Content="{DynamicResource CancelButton}" Command="{Binding CancelCommand}" 
+                    Width="80" Height="35" Margin="5" FontSize="14"
+                    Background="{DynamicResource ChildButtonBackground}"
+                    Foreground="{DynamicResource ChildButtonForeground}"/>
+        </StackPanel>
+    </Grid>
+</Window>

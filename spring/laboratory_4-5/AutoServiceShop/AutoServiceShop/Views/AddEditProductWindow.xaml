@@ -1,0 +1,106 @@
+﻿<Window x:Class="AutoServiceShop.Views.AddEditProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:converters="clr-namespace:AutoServiceShop.Converters"
+        Title="{DynamicResource EditWindowTitle}"
+        Height="600" Width="800"
+        WindowStartupLocation="CenterOwner"
+        Icon="../Resources/app.ico"
+        Cursor="../Resources/custom.cur">
+    <Window.Resources>
+        <converters:ImagePathConverter x:Key="ImagePathConverter"/>
+    </Window.Resources>
+    <Grid Margin="10" Cursor="">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <Label Content="{DynamicResource ShortNameLabel}"/>
+                <TextBox Text="{Binding Product.ShortName, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}">
+                    <Validation.ErrorTemplate>
+                        <ControlTemplate>
+                            <DockPanel LastChildFill="True">
+                                <Border Background="Red" Width="20" Height="20" DockPanel.Dock="Right" Margin="2,0" CornerRadius="3"
+                                        ToolTip="{Binding ElementName=adorned, Path=AdornedElement.(Validation.Errors)[0].ErrorContent}">
+                                    <TextBlock Text="!" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Foreground="White"/>
+                                </Border>
+                                <AdornedElementPlaceholder x:Name="adorned"/>
+                            </DockPanel>
+                        </ControlTemplate>
+                    </Validation.ErrorTemplate>
+                </TextBox>
+
+                <Label Content="{DynamicResource FullNameLabel}"/>
+                <TextBox Text="{Binding Product.FullName, UpdateSourceTrigger=PropertyChanged}"/>
+
+                <Label Content="{DynamicResource DescriptionLabel}"/>
+                <TextBox Text="{Binding Product.Description}" TextWrapping="Wrap" AcceptsReturn="True" Height="80"/>
+
+                <Label Content="{DynamicResource CategoryLabel}"/>
+                <TextBox Text="{Binding Product.Category}"/>
+
+                <Label Content="{DynamicResource PriceLabel}"/>
+                <TextBox Text="{Binding Product.Price, UpdateSourceTrigger=LostFocus, TargetNullValue=0, FallbackValue=0}"/>
+
+                <Label Content="{DynamicResource QuantityLabel}"/>
+                <TextBox Text="{Binding Product.Quantity, UpdateSourceTrigger=LostFocus, TargetNullValue=0, FallbackValue=0}"/>
+
+                <Label Content="{DynamicResource RatingLabel}"/>
+                <TextBox Text="{Binding Product.Rating, UpdateSourceTrigger=LostFocus, TargetNullValue=0, FallbackValue=0}"/>
+
+                <Label Content="{DynamicResource CountryLabel}"/>
+                <TextBox Text="{Binding Product.Country}"/>
+
+                <Label Content="{DynamicResource DiscountLabel}"/>
+                <TextBox Text="{Binding Product.Discount, UpdateSourceTrigger=LostFocus, TargetNullValue=0, FallbackValue=0}"/>
+
+                <CheckBox IsChecked="{Binding Product.InStock}" Content="{DynamicResource InStockLabel}" Margin="0,5"/>
+
+                <Label Content="{DynamicResource ManufacturerLabel}"/>
+                <TextBox Text="{Binding Product.Manufacturer}"/>
+
+                <Label Content="{DynamicResource ColorLabel}"/>
+                <TextBox Text="{Binding Product.Color}"/>
+
+                <Label Content="{DynamicResource SizeLabel}"/>
+                <TextBox Text="{Binding Product.Size}"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <GroupBox Header="{DynamicResource ImagesGroupHeader}" Grid.Row="1" Margin="0,10">
+            <DockPanel>
+                <Button Content="{DynamicResource AddImageButton}" Command="{Binding AddImageCommand}" DockPanel.Dock="Top" Margin="5"/>
+                <ListBox ItemsSource="{Binding EditableImagePaths}"
+                         AllowDrop="True"
+                         Drop="ListBox_Drop"
+                         DragEnter="ListBox_DragEnter"
+                         Height="150">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{Binding ., Converter={StaticResource ImagePathConverter}}" Width="50" Height="50" Margin="5"/>
+                                <TextBlock Text="{Binding}" VerticalAlignment="Center" Width="200" TextWrapping="Wrap"/>
+                                <Button Content="X" 
+                                        Command="{Binding DataContext.RemoveImageCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                        CommandParameter="{Binding}"
+                                        Margin="5"
+                                        Width="45"
+                                        Background="Red"
+                                        Foreground="White"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </DockPanel>
+        </GroupBox>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="{DynamicResource SaveButton}" Command="{Binding SaveCommand}" Width="100" Height="30" Margin="5"/>
+            <Button Content="{DynamicResource CancelButton}" Command="{Binding CancelCommand}" Width="80" Height="30" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

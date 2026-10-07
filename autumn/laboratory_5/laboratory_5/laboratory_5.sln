@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laboratory_5", "laboratory_5.csproj", "{F9C14DA3-7147-4890-9B23-2675308A5795}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{73FA95A2-7AE6-460F-8137-272D3EC390A3}"
+	ProjectSection(SolutionItems) = preProject
+		Receipt.partial.cs = Receipt.partial.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9C14DA3-7147-4890-9B23-2675308A5795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C14DA3-7147-4890-9B23-2675308A5795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C14DA3-7147-4890-9B23-2675308A5795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C14DA3-7147-4890-9B23-2675308A5795}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ECEBE35-C6ED-4ADC-A46F-259776E6E2E0}
+	EndGlobalSection
+EndGlobal

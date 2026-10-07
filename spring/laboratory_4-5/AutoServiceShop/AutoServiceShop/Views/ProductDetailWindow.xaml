@@ -1,0 +1,70 @@
+﻿<Window x:Class="AutoServiceShop.Views.ProductDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:converters="clr-namespace:AutoServiceShop.Converters"
+        Title="{DynamicResource DetailWindowTitle}" Height="450" Width="600"
+        WindowStartupLocation="CenterOwner"
+        Icon="../Resources/app.ico"
+        Cursor="../Resources/custom.cur">
+    <Window.Resources>
+        <converters:ImagePathConverter x:Key="ImagePathConverter"/>
+    </Window.Resources>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="10">
+            <TextBlock Text="{DynamicResource ShortNameLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding ShortName}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource FullNameLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding FullName}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource DescriptionLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource CategoryLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Category}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource PriceLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Price, StringFormat={}{0:C}}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource QuantityLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Quantity}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource RatingLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Rating}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource CountryLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Country}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource DiscountLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Discount}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource InStockLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding InStock}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource ManufacturerLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Manufacturer}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource ColorLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Color}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource SizeLabel}" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Size}" Margin="0,0,0,10"/>
+
+            <TextBlock Text="{DynamicResource ImagesGroupHeader}" FontWeight="Bold"/>
+            <ItemsControl ItemsSource="{Binding ImagePaths}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding ., Converter={StaticResource ImagePathConverter}}" Width="100" Height="100" Margin="5"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+
+            <Button Content="{DynamicResource CloseButton}" Width="100" Height="30" Margin="10" Click="CloseButton_Click"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

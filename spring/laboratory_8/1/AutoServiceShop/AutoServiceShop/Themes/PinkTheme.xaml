@@ -1,0 +1,50 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Розовая тема -->
+    <SolidColorBrush x:Key="PrimaryBrush" Color="#FF69B4"/>
+    <!-- Розовый фон кнопок -->
+    <SolidColorBrush x:Key="SecondaryBrush" Color="#FF1493"/>
+    <!-- Тёмно-розовый для наведения -->
+    <SolidColorBrush x:Key="SuccessBrush" Color="#32CD32"/>
+    <!-- Зелёный -->
+    <SolidColorBrush x:Key="ErrorBrush" Color="#DC143C"/>
+    <!-- Красный -->
+    <SolidColorBrush x:Key="BackgroundBrush" Color="#FFF0F5"/>
+    <!-- Светло-розовый фон -->
+    <SolidColorBrush x:Key="SurfaceBrush" Color="#FFE4E1"/>
+    <!-- Розовый фон карточек -->
+    <SolidColorBrush x:Key="ForegroundBrush" Color="#4B0082"/>
+    <!-- Тёмно-синий текст -->
+    <SolidColorBrush x:Key="SecondaryForegroundBrush" Color="#FF1493"/>
+    <!-- Розовый текст (для Label) -->
+    <SolidColorBrush x:Key="BorderBrush" Color="#DDA0DD"/>
+    <!-- Светло-розовая граница -->
+    <SolidColorBrush x:Key="CardBorderBrush" Color="#FF69B4"/>
+    <!-- Розовая обводка -->
+    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+    <SolidColorBrush x:Key="TextBoxBackgroundBrush" Color="#FFE4E1"/>
+    <SolidColorBrush x:Key="TextBoxForegroundBrush" Color="#4B0082"/>
+    <SolidColorBrush x:Key="SearchTextBoxBackgroundBrush" Color="#FFE4E1"/>
+    <SolidColorBrush x:Key="SearchTextBoxForegroundBrush" Color="#4B0082"/>
+    <SolidColorBrush x:Key="ComboBoxBackgroundBrush" Color="#FFE4E1"/>
+    <SolidColorBrush x:Key="ComboBoxForegroundBrush" Color="#4B0082"/>
+    <SolidColorBrush x:Key="FilterButtonBackgroundBrush" Color="#FF69B4"/>
+    <SolidColorBrush x:Key="FilterButtonForegroundBrush" Color="White"/>
+    <SolidColorBrush x:Key="FilterButtonBorderBrush" Color="#FF69B4"/>
+    <SolidColorBrush x:Key="RadioButtonForeground" Color="#4B0082"/>
+    <SolidColorBrush x:Key="CheckBoxForeground" Color="#4B0082"/>
+    <SolidColorBrush x:Key="PriceForegroundBrush" Color="#FF1493"/>
+
+    <!-- Кисти для дочерних окон (розовое оформление) -->
+    <SolidColorBrush x:Key="ChildWindowBackground" Color="#FFF0F5"/>
+    <SolidColorBrush x:Key="ChildLabelForeground" Color="#4B0082"/>
+    <SolidColorBrush x:Key="ChildTextBoxBackground" Color="#FFE4E1"/>
+    <SolidColorBrush x:Key="ChildTextBoxForeground" Color="#4B0082"/>
+    <SolidColorBrush x:Key="ChildButtonBackground" Color="#FF69B4"/>
+    <SolidColorBrush x:Key="ChildButtonForeground" Color="White"/>
+    <SolidColorBrush x:Key="ChildBorderBrush" Color="#DDA0DD"/>
+    <SolidColorBrush x:Key="ChildForeground" Color="#4B0082"/>
+    <SolidColorBrush x:Key="ChildCheckBoxForeground" Color="#4B0082"/>
+    <SolidColorBrush x:Key="ChildComboBoxBackground" Color="#FFE4E1"/>
+    <SolidColorBrush x:Key="ChildComboBoxForeground" Color="#4B0082"/>
+</ResourceDictionary>

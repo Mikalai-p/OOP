@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\brake_pads.jpg" />
+    <None Remove="Images\oil_change.jpg" />
+    <None Remove="Resources\app.ico" />
+    <None Remove="Resources\custom.cur" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\brake_pads.jpg" />
+    <Content Include="Images\oil_change.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\app.ico" />
+    <Resource Include="Resources\custom.cur" />
+  </ItemGroup>
+
+</Project>
